@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="nichebit.uploadfileview.UploadFileView"
+        pluginWidget="true"
+        needsEntityContext="true"
+        offlineCapable="false"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+
+    <name>File Viewer</name>
+    <description>View and download files with popup viewer. Works with FileDocument entities.</description>
+
+    <!-- Base64 encoded nb.svg icon -->
+    <icon>
+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
+    </icon>
+
+    <properties>
+        <propertyGroup caption="Data Source">
+            <property key="fileDocument" type="file" required="true">
+                <caption>File Document</caption>
+                <description>FileDocument or generalized entity containing the file</description>
+            </property>
+        </propertyGroup>
+
+        <propertyGroup caption="Viewer Settings">
+            <property key="viewButtonText" type="string" defaultValue="View">
+                <caption>View Button Text</caption>
+                <description>Text displayed on view button</description>
+            </property>
+            <property key="popupTitle" type="string" defaultValue="File Viewer">
+                <caption>Popup Title</caption>
+                <description>Title of the popup window</description>
+            </property>
+            <property key="popupWidth" type="string" defaultValue="80%">
+                <caption>Popup Width</caption>
+                <description>Width of popup (e.g., 80%, 800px)</description>
+            </property>
+            <property key="popupHeight" type="string" defaultValue="80%">
+                <caption>Popup Height</caption>
+                <description>Height of popup (e.g., 80%, 600px)</description>
+            </property>
+        </propertyGroup>
+
+        <propertyGroup caption="Appearance">
+            <property key="showFileName" type="boolean" defaultValue="true">
+                <caption>Show File Name</caption>
+                <description>Display the file name</description>
+            </property>
+            <property key="showViewButton" type="boolean" defaultValue="true">
+                <caption>Show View Button</caption>
+                <description>Show button to view/preview file</description>
+            </property>
+            <property key="showDownloadButton" type="boolean" defaultValue="true">
+                <caption>Show Download Button</caption>
+                <description>Show button to download file</description>
+            </property>
+            <property key="showFileTypeIcon" type="boolean" defaultValue="true">
+                <caption>Show File Type Icon</caption>
+                <description>Display icon based on file type</description>
+            </property>
+            <property key="buttonStyle" type="enumeration" defaultValue="primary">
+                <caption>View Button Style</caption>
+                <description>Style of the view button</description>
+                <enumerationValues>
+                    <enumerationValue key="primary">Primary</enumerationValue>
+                    <enumerationValue key="secondary">Secondary</enumerationValue>
+                    <enumerationValue key="success">Success</enumerationValue>
+                    <enumerationValue key="info">Info</enumerationValue>
+                    <enumerationValue key="warning">Warning</enumerationValue>
+                    <enumerationValue key="danger">Danger</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+
+        <propertyGroup caption="Messages">
+            <property key="noFileMessage" type="string" defaultValue="No file available">
+                <caption>No File Message</caption>
+                <description>Message when no file is available</description>
+            </property>
+            <property key="previewNotAvailableMessage" type="string"
+                      defaultValue="Preview not available for this file type. Please download the file.">
+                <caption>Preview Not Available Message</caption>
+                <description>Message when file cannot be previewed</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
